@@ -1,0 +1,244 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0100ACB114A7CD470010DD65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0100ACB014A7CD470010DD65 /* Foundation.framework */; };
+		0100ACB414A7CD470010DD65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0100ACB314A7CD470010DD65 /* main.m */; };
+		0100ACB814A7CD470010DD65 /* CH03_CAStreamFormatTester.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0100ACB714A7CD470010DD65 /* CH03_CAStreamFormatTester.1 */; };
+		0100ACBF14A7CD870010DD65 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0100ACBE14A7CD870010DD65 /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0100ACAA14A7CD470010DD65 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				0100ACB814A7CD470010DD65 /* CH03_CAStreamFormatTester.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0100ACAC14A7CD470010DD65 /* CH03_CAStreamFormatTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CH03_CAStreamFormatTester; sourceTree = BUILT_PRODUCTS_DIR; };
+		0100ACB014A7CD470010DD65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0100ACB314A7CD470010DD65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0100ACB614A7CD470010DD65 /* CH03_CAStreamFormatTester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CH03_CAStreamFormatTester-Prefix.pch"; sourceTree = "<group>"; };
+		0100ACB714A7CD470010DD65 /* CH03_CAStreamFormatTester.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CH03_CAStreamFormatTester.1; sourceTree = "<group>"; };
+		0100ACBE14A7CD870010DD65 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0100ACA914A7CD470010DD65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0100ACBF14A7CD870010DD65 /* AudioToolbox.framework in Frameworks */,
+				0100ACB114A7CD470010DD65 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0100ACA114A7CD470010DD65 = {
+			isa = PBXGroup;
+			children = (
+				0100ACBE14A7CD870010DD65 /* AudioToolbox.framework */,
+				0100ACB214A7CD470010DD65 /* CH03_CAStreamFormatTester */,
+				0100ACAF14A7CD470010DD65 /* Frameworks */,
+				0100ACAD14A7CD470010DD65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0100ACAD14A7CD470010DD65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0100ACAC14A7CD470010DD65 /* CH03_CAStreamFormatTester */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0100ACAF14A7CD470010DD65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0100ACB014A7CD470010DD65 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0100ACB214A7CD470010DD65 /* CH03_CAStreamFormatTester */ = {
+			isa = PBXGroup;
+			children = (
+				0100ACB314A7CD470010DD65 /* main.m */,
+				0100ACB714A7CD470010DD65 /* CH03_CAStreamFormatTester.1 */,
+				0100ACB514A7CD470010DD65 /* Supporting Files */,
+			);
+			path = CH03_CAStreamFormatTester;
+			sourceTree = "<group>";
+		};
+		0100ACB514A7CD470010DD65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0100ACB614A7CD470010DD65 /* CH03_CAStreamFormatTester-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0100ACAB14A7CD470010DD65 /* CH03_CAStreamFormatTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0100ACBB14A7CD470010DD65 /* Build configuration list for PBXNativeTarget "CH03_CAStreamFormatTester" */;
+			buildPhases = (
+				0100ACA814A7CD470010DD65 /* Sources */,
+				0100ACA914A7CD470010DD65 /* Frameworks */,
+				0100ACAA14A7CD470010DD65 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CH03_CAStreamFormatTester;
+			productName = CH03_CAStreamFormatTester;
+			productReference = 0100ACAC14A7CD470010DD65 /* CH03_CAStreamFormatTester */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0100ACA314A7CD470010DD65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Subsequently and Furthermore, Inc.";
+			};
+			buildConfigurationList = 0100ACA614A7CD470010DD65 /* Build configuration list for PBXProject "CH03_CAStreamFormatTester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0100ACA114A7CD470010DD65;
+			productRefGroup = 0100ACAD14A7CD470010DD65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0100ACAB14A7CD470010DD65 /* CH03_CAStreamFormatTester */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0100ACA814A7CD470010DD65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0100ACB414A7CD470010DD65 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0100ACB914A7CD470010DD65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		0100ACBA14A7CD470010DD65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		0100ACBC14A7CD470010DD65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CH03_CAStreamFormatTester/CH03_CAStreamFormatTester-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		0100ACBD14A7CD470010DD65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CH03_CAStreamFormatTester/CH03_CAStreamFormatTester-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0100ACA614A7CD470010DD65 /* Build configuration list for PBXProject "CH03_CAStreamFormatTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0100ACB914A7CD470010DD65 /* Debug */,
+				0100ACBA14A7CD470010DD65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0100ACBB14A7CD470010DD65 /* Build configuration list for PBXNativeTarget "CH03_CAStreamFormatTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0100ACBC14A7CD470010DD65 /* Debug */,
+				0100ACBD14A7CD470010DD65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0100ACA314A7CD470010DD65 /* Project object */;
+}

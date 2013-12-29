@@ -1,0 +1,234 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B17A8914A50D20000E5E07 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B17A8814A50D20000E5E07 /* CoreFoundation.framework */; };
+		01B17A8C14A50D20000E5E07 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 01B17A8B14A50D20000E5E07 /* main.c */; };
+		01B17A8E14A50D20000E5E07 /* CH07_AUGraphSineWave.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01B17A8D14A50D20000E5E07 /* CH07_AUGraphSineWave.1 */; };
+		01B17A9614A50D43000E5E07 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B17A9414A50D43000E5E07 /* AudioToolbox.framework */; };
+		01B17A9714A50D43000E5E07 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B17A9514A50D43000E5E07 /* AudioUnit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01B17A8214A50D20000E5E07 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				01B17A8E14A50D20000E5E07 /* CH07_AUGraphSineWave.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01B17A8414A50D20000E5E07 /* CH07_AUGraphSineWave */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CH07_AUGraphSineWave; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B17A8814A50D20000E5E07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		01B17A8B14A50D20000E5E07 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		01B17A8D14A50D20000E5E07 /* CH07_AUGraphSineWave.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CH07_AUGraphSineWave.1; sourceTree = "<group>"; };
+		01B17A9414A50D43000E5E07 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		01B17A9514A50D43000E5E07 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AudioUnit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01B17A8114A50D20000E5E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B17A9614A50D43000E5E07 /* AudioToolbox.framework in Frameworks */,
+				01B17A9714A50D43000E5E07 /* AudioUnit.framework in Frameworks */,
+				01B17A8914A50D20000E5E07 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B17A7914A50D20000E5E07 = {
+			isa = PBXGroup;
+			children = (
+				01B17A8A14A50D20000E5E07 /* CH07_AUGraphSineWave */,
+				01B17A8714A50D20000E5E07 /* Frameworks */,
+				01B17A8514A50D20000E5E07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01B17A8514A50D20000E5E07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01B17A8414A50D20000E5E07 /* CH07_AUGraphSineWave */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01B17A8714A50D20000E5E07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01B17A9414A50D43000E5E07 /* AudioToolbox.framework */,
+				01B17A9514A50D43000E5E07 /* AudioUnit.framework */,
+				01B17A8814A50D20000E5E07 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01B17A8A14A50D20000E5E07 /* CH07_AUGraphSineWave */ = {
+			isa = PBXGroup;
+			children = (
+				01B17A8B14A50D20000E5E07 /* main.c */,
+				01B17A8D14A50D20000E5E07 /* CH07_AUGraphSineWave.1 */,
+			);
+			path = CH07_AUGraphSineWave;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01B17A8314A50D20000E5E07 /* CH07_AUGraphSineWave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B17A9114A50D20000E5E07 /* Build configuration list for PBXNativeTarget "CH07_AUGraphSineWave" */;
+			buildPhases = (
+				01B17A8014A50D20000E5E07 /* Sources */,
+				01B17A8114A50D20000E5E07 /* Frameworks */,
+				01B17A8214A50D20000E5E07 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CH07_AUGraphSineWave;
+			productName = CH07_AUGraphSineWave;
+			productReference = 01B17A8414A50D20000E5E07 /* CH07_AUGraphSineWave */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01B17A7B14A50D20000E5E07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Subsequently and Furthermore, Inc.";
+			};
+			buildConfigurationList = 01B17A7E14A50D20000E5E07 /* Build configuration list for PBXProject "CH07_AUGraphSineWave" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 01B17A7914A50D20000E5E07;
+			productRefGroup = 01B17A8514A50D20000E5E07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01B17A8314A50D20000E5E07 /* CH07_AUGraphSineWave */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01B17A8014A50D20000E5E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B17A8C14A50D20000E5E07 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01B17A8F14A50D20000E5E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		01B17A9014A50D20000E5E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		01B17A9214A50D20000E5E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		01B17A9314A50D20000E5E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01B17A7E14A50D20000E5E07 /* Build configuration list for PBXProject "CH07_AUGraphSineWave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B17A8F14A50D20000E5E07 /* Debug */,
+				01B17A9014A50D20000E5E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01B17A9114A50D20000E5E07 /* Build configuration list for PBXNativeTarget "CH07_AUGraphSineWave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B17A9214A50D20000E5E07 /* Debug */,
+				01B17A9314A50D20000E5E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01B17A7B14A50D20000E5E07 /* Project object */;
+}

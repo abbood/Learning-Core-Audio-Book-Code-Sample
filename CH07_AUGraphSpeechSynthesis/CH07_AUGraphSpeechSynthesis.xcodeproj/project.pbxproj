@@ -1,0 +1,238 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B17AAB14A50F8C000E5E07 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B17AAA14A50F8C000E5E07 /* CoreFoundation.framework */; };
+		01B17AAE14A50F8C000E5E07 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 01B17AAD14A50F8C000E5E07 /* main.c */; };
+		01B17AB014A50F8C000E5E07 /* CH07_AUGraphSpeechSynthesis.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01B17AAF14A50F8C000E5E07 /* CH07_AUGraphSpeechSynthesis.1 */; };
+		01B17AB714A50FBC000E5E07 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B17AB614A50FBC000E5E07 /* AudioToolbox.framework */; };
+		01B17AB914A50FC4000E5E07 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B17AB814A50FC4000E5E07 /* AudioUnit.framework */; };
+		01B17ABB14A50FE6000E5E07 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B17ABA14A50FE6000E5E07 /* ApplicationServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01B17AA414A50F8C000E5E07 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				01B17AB014A50F8C000E5E07 /* CH07_AUGraphSpeechSynthesis.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01B17AA614A50F8C000E5E07 /* CH07_AUGraphSpeechSynthesis */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CH07_AUGraphSpeechSynthesis; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B17AAA14A50F8C000E5E07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		01B17AAD14A50F8C000E5E07 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		01B17AAF14A50F8C000E5E07 /* CH07_AUGraphSpeechSynthesis.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CH07_AUGraphSpeechSynthesis.1; sourceTree = "<group>"; };
+		01B17AB614A50FBC000E5E07 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		01B17AB814A50FC4000E5E07 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AudioUnit.framework; sourceTree = DEVELOPER_DIR; };
+		01B17ABA14A50FE6000E5E07 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/ApplicationServices.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01B17AA314A50F8C000E5E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B17ABB14A50FE6000E5E07 /* ApplicationServices.framework in Frameworks */,
+				01B17AB914A50FC4000E5E07 /* AudioUnit.framework in Frameworks */,
+				01B17AB714A50FBC000E5E07 /* AudioToolbox.framework in Frameworks */,
+				01B17AAB14A50F8C000E5E07 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B17A9B14A50F8C000E5E07 = {
+			isa = PBXGroup;
+			children = (
+				01B17AAC14A50F8C000E5E07 /* CH07_AUGraphSpeechSynthesis */,
+				01B17AA914A50F8C000E5E07 /* Frameworks */,
+				01B17AA714A50F8C000E5E07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01B17AA714A50F8C000E5E07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01B17AA614A50F8C000E5E07 /* CH07_AUGraphSpeechSynthesis */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01B17AA914A50F8C000E5E07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01B17ABA14A50FE6000E5E07 /* ApplicationServices.framework */,
+				01B17AB814A50FC4000E5E07 /* AudioUnit.framework */,
+				01B17AB614A50FBC000E5E07 /* AudioToolbox.framework */,
+				01B17AAA14A50F8C000E5E07 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01B17AAC14A50F8C000E5E07 /* CH07_AUGraphSpeechSynthesis */ = {
+			isa = PBXGroup;
+			children = (
+				01B17AAD14A50F8C000E5E07 /* main.c */,
+				01B17AAF14A50F8C000E5E07 /* CH07_AUGraphSpeechSynthesis.1 */,
+			);
+			path = CH07_AUGraphSpeechSynthesis;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01B17AA514A50F8C000E5E07 /* CH07_AUGraphSpeechSynthesis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B17AB314A50F8C000E5E07 /* Build configuration list for PBXNativeTarget "CH07_AUGraphSpeechSynthesis" */;
+			buildPhases = (
+				01B17AA214A50F8C000E5E07 /* Sources */,
+				01B17AA314A50F8C000E5E07 /* Frameworks */,
+				01B17AA414A50F8C000E5E07 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CH07_AUGraphSpeechSynthesis;
+			productName = CH07_AUGraphSpeechSynthesis;
+			productReference = 01B17AA614A50F8C000E5E07 /* CH07_AUGraphSpeechSynthesis */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01B17A9D14A50F8C000E5E07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Subsequently and Furthermore, Inc.";
+			};
+			buildConfigurationList = 01B17AA014A50F8C000E5E07 /* Build configuration list for PBXProject "CH07_AUGraphSpeechSynthesis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 01B17A9B14A50F8C000E5E07;
+			productRefGroup = 01B17AA714A50F8C000E5E07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01B17AA514A50F8C000E5E07 /* CH07_AUGraphSpeechSynthesis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01B17AA214A50F8C000E5E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B17AAE14A50F8C000E5E07 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01B17AB114A50F8C000E5E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		01B17AB214A50F8C000E5E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		01B17AB414A50F8C000E5E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		01B17AB514A50F8C000E5E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01B17AA014A50F8C000E5E07 /* Build configuration list for PBXProject "CH07_AUGraphSpeechSynthesis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B17AB114A50F8C000E5E07 /* Debug */,
+				01B17AB214A50F8C000E5E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01B17AB314A50F8C000E5E07 /* Build configuration list for PBXNativeTarget "CH07_AUGraphSpeechSynthesis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B17AB414A50F8C000E5E07 /* Debug */,
+				01B17AB514A50F8C000E5E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01B17A9D14A50F8C000E5E07 /* Project object */;
+}

@@ -1,0 +1,41 @@
+CHANGES for "Learning Core Audio: A Hands-On Guide to Audio Programming for Mac and iOS" sample code
+
+August 29, 2012:
+
+All projects:
+-------------
+Now that Xcode 4.4 has dropped support for OS X 10.6 as a base SDK, we have updated all the OS X project files to build for the OS X 10.7 SDK. The deployment target is still 10.6. iOS projects are still "Latest iOS", and work on iOS 5.1, the current public version as of this writing.
+
+CH02_CAToneFileGenerator/
+		main.m
+-------------------------		
+Changed line 106 from:
+	NSLog (@"wrote %ld samples", sampleCount);
+to
+	NSLog (@"wrote %ld samples", sampleCount);
+to match the bit-depth of the sampleCount argument
+(thanks "jarryd")
+
+
+CH07_AUGraphSineWave/
+		main.c
+----------------------
+Changed line 96 from:
+	input.inputProcRefCon = &player;
+to
+	input.inputProcRefCon = player;
+to correct the pointer type of player, and eliminate a crash when the sleep() exits.
+(thanks Stefan Frauenfelder and Dmitri Kharlamov)
+
+
+CH10_iOSBackgroundingTone/
+		CH10_iOSBackgroundingToneAppDelegate.m
+-----------------------------------------------		
+Changed line 63 from:
+	(data)[frame] = (SInt16) (sin (2 * M_PI * (j / cycleLength)) * 0x8000);
+to
+	(data)[frame] = (SInt16) (sin (2 * M_PI * (j / cycleLength)) * SHRT_MAX);
+to eliminate malformed waves at certain frequencies / sample rates.
+(thanks Markus Boigner)
+
+

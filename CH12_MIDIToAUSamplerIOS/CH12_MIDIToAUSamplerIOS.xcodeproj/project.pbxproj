@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012454C414B274B400985B68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012454C314B274B400985B68 /* UIKit.framework */; };
+		012454C614B274B400985B68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012454C514B274B400985B68 /* Foundation.framework */; };
+		012454C814B274B400985B68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012454C714B274B400985B68 /* CoreGraphics.framework */; };
+		012454CE14B274B400985B68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 012454CC14B274B400985B68 /* InfoPlist.strings */; };
+		012454D014B274B400985B68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 012454CF14B274B400985B68 /* main.m */; };
+		012454D414B274B400985B68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 012454D314B274B400985B68 /* AppDelegate.m */; };
+		012454DC14B2750300985B68 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012454DA14B2750300985B68 /* AudioToolbox.framework */; };
+		012454DD14B2750300985B68 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012454DB14B2750300985B68 /* CoreMIDI.framework */; };
+		012454E214B275DB00985B68 /* ch12-aupreset.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = 012454E114B275DB00985B68 /* ch12-aupreset.aupreset */; };
+		012454E614B277CA00985B68 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 012454E514B277CA00985B68 /* Icon@2x.png */; };
+		012454E814B277CE00985B68 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 012454E714B277CE00985B68 /* Icon.png */; };
+		012454F014B279C600985B68 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 012454EF14B279C600985B68 /* Sounds */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		012454BF14B274B400985B68 /* CH12_MIDIToAUSamplerIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CH12_MIDIToAUSamplerIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		012454C314B274B400985B68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		012454C514B274B400985B68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		012454C714B274B400985B68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		012454CB14B274B400985B68 /* CH12_MIDIToAUSamplerIOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CH12_MIDIToAUSamplerIOS-Info.plist"; sourceTree = "<group>"; };
+		012454CD14B274B400985B68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		012454CF14B274B400985B68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		012454D114B274B400985B68 /* CH12_MIDIToAUSamplerIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CH12_MIDIToAUSamplerIOS-Prefix.pch"; sourceTree = "<group>"; };
+		012454D214B274B400985B68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		012454D314B274B400985B68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		012454DA14B2750300985B68 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		012454DB14B2750300985B68 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		012454DE14B2750C00985B68 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		012454E114B275DB00985B68 /* ch12-aupreset.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ch12-aupreset.aupreset"; sourceTree = "<group>"; };
+		012454E514B277CA00985B68 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		012454E714B277CE00985B68 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		012454EF14B279C600985B68 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		012454BC14B274B400985B68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012454DC14B2750300985B68 /* AudioToolbox.framework in Frameworks */,
+				012454DD14B2750300985B68 /* CoreMIDI.framework in Frameworks */,
+				012454C414B274B400985B68 /* UIKit.framework in Frameworks */,
+				012454C614B274B400985B68 /* Foundation.framework in Frameworks */,
+				012454C814B274B400985B68 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		012454B414B274B400985B68 = {
+			isa = PBXGroup;
+			children = (
+				012454E714B277CE00985B68 /* Icon.png */,
+				012454E514B277CA00985B68 /* Icon@2x.png */,
+				012454DE14B2750C00985B68 /* AudioUnit.framework */,
+				012454DA14B2750300985B68 /* AudioToolbox.framework */,
+				012454DB14B2750300985B68 /* CoreMIDI.framework */,
+				012454C914B274B400985B68 /* CH12_MIDIToAUSamplerIOS */,
+				012454E014B275C700985B68 /* Resources */,
+				012454C214B274B400985B68 /* Frameworks */,
+				012454C014B274B400985B68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		012454C014B274B400985B68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				012454BF14B274B400985B68 /* CH12_MIDIToAUSamplerIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		012454C214B274B400985B68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				012454C314B274B400985B68 /* UIKit.framework */,
+				012454C514B274B400985B68 /* Foundation.framework */,
+				012454C714B274B400985B68 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		012454C914B274B400985B68 /* CH12_MIDIToAUSamplerIOS */ = {
+			isa = PBXGroup;
+			children = (
+				012454D214B274B400985B68 /* AppDelegate.h */,
+				012454D314B274B400985B68 /* AppDelegate.m */,
+				012454CA14B274B400985B68 /* Supporting Files */,
+			);
+			path = CH12_MIDIToAUSamplerIOS;
+			sourceTree = "<group>";
+		};
+		012454CA14B274B400985B68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				012454CB14B274B400985B68 /* CH12_MIDIToAUSamplerIOS-Info.plist */,
+				012454CC14B274B400985B68 /* InfoPlist.strings */,
+				012454CF14B274B400985B68 /* main.m */,
+				012454D114B274B400985B68 /* CH12_MIDIToAUSamplerIOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		012454E014B275C700985B68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				012454E114B275DB00985B68 /* ch12-aupreset.aupreset */,
+				012454EF14B279C600985B68 /* Sounds */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		012454BE14B274B400985B68 /* CH12_MIDIToAUSamplerIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 012454D714B274B400985B68 /* Build configuration list for PBXNativeTarget "CH12_MIDIToAUSamplerIOS" */;
+			buildPhases = (
+				012454BB14B274B400985B68 /* Sources */,
+				012454BC14B274B400985B68 /* Frameworks */,
+				012454BD14B274B400985B68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CH12_MIDIToAUSamplerIOS;
+			productName = CH12_MIDIToAUSamplerIOS;
+			productReference = 012454BF14B274B400985B68 /* CH12_MIDIToAUSamplerIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		012454B614B274B400985B68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Subsequently and Furthermore, Inc.";
+			};
+			buildConfigurationList = 012454B914B274B400985B68 /* Build configuration list for PBXProject "CH12_MIDIToAUSamplerIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 012454B414B274B400985B68;
+			productRefGroup = 012454C014B274B400985B68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				012454BE14B274B400985B68 /* CH12_MIDIToAUSamplerIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		012454BD14B274B400985B68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012454CE14B274B400985B68 /* InfoPlist.strings in Resources */,
+				012454E214B275DB00985B68 /* ch12-aupreset.aupreset in Resources */,
+				012454E614B277CA00985B68 /* Icon@2x.png in Resources */,
+				012454E814B277CE00985B68 /* Icon.png in Resources */,
+				012454F014B279C600985B68 /* Sounds in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		012454BB14B274B400985B68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012454D014B274B400985B68 /* main.m in Sources */,
+				012454D414B274B400985B68 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		012454CC14B274B400985B68 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				012454CD14B274B400985B68 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		012454D514B274B400985B68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		012454D614B274B400985B68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		012454D814B274B400985B68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CH12_MIDIToAUSamplerIOS/CH12_MIDIToAUSamplerIOS-Prefix.pch";
+				INFOPLIST_FILE = "CH12_MIDIToAUSamplerIOS/CH12_MIDIToAUSamplerIOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		012454D914B274B400985B68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CH12_MIDIToAUSamplerIOS/CH12_MIDIToAUSamplerIOS-Prefix.pch";
+				INFOPLIST_FILE = "CH12_MIDIToAUSamplerIOS/CH12_MIDIToAUSamplerIOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		012454B914B274B400985B68 /* Build configuration list for PBXProject "CH12_MIDIToAUSamplerIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012454D514B274B400985B68 /* Debug */,
+				012454D614B274B400985B68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		012454D714B274B400985B68 /* Build configuration list for PBXNativeTarget "CH12_MIDIToAUSamplerIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012454D814B274B400985B68 /* Debug */,
+				012454D914B274B400985B68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 012454B614B274B400985B68 /* Project object */;
+}

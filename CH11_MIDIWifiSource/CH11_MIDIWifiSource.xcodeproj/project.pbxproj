@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011CBC0B141B97DA00C34007 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011CBC0A141B97DA00C34007 /* UIKit.framework */; };
+		011CBC0D141B97DA00C34007 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011CBC0C141B97DA00C34007 /* Foundation.framework */; };
+		011CBC0F141B97DA00C34007 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011CBC0E141B97DA00C34007 /* CoreGraphics.framework */; };
+		011CBC15141B97DA00C34007 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 011CBC13141B97DA00C34007 /* InfoPlist.strings */; };
+		011CBC17141B97DA00C34007 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CBC16141B97DA00C34007 /* main.m */; };
+		011CBC1B141B97DA00C34007 /* CH11_MIDIWifiSourceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CBC1A141B97DA00C34007 /* CH11_MIDIWifiSourceAppDelegate.m */; };
+		011CBC1E141B97DA00C34007 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011CBC1C141B97DA00C34007 /* MainWindow.xib */; };
+		011CBC21141B97DA00C34007 /* CH11_MIDIWifiSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CBC20141B97DA00C34007 /* CH11_MIDIWifiSourceViewController.m */; };
+		011CBC24141B97DA00C34007 /* CH11_MIDIWifiSourceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011CBC22141B97DA00C34007 /* CH11_MIDIWifiSourceViewController.xib */; };
+		012F5217141BA01800723F2D /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012F5216141BA01800723F2D /* CoreMIDI.framework */; };
+		012F521F141BA0A400723F2D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 012F521D141BA0A400723F2D /* Icon@2x.png */; };
+		012F5220141BA0A400723F2D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 012F521E141BA0A400723F2D /* Icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		011CBC06141B97DA00C34007 /* CH11_MIDIWifiSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CH11_MIDIWifiSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		011CBC0A141B97DA00C34007 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		011CBC0C141B97DA00C34007 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		011CBC0E141B97DA00C34007 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		011CBC12141B97DA00C34007 /* CH11_MIDIWifiSource-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CH11_MIDIWifiSource-Info.plist"; sourceTree = "<group>"; };
+		011CBC14141B97DA00C34007 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		011CBC16141B97DA00C34007 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		011CBC18141B97DA00C34007 /* CH11_MIDIWifiSource-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CH11_MIDIWifiSource-Prefix.pch"; sourceTree = "<group>"; };
+		011CBC19141B97DA00C34007 /* CH11_MIDIWifiSourceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CH11_MIDIWifiSourceAppDelegate.h; sourceTree = "<group>"; };
+		011CBC1A141B97DA00C34007 /* CH11_MIDIWifiSourceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CH11_MIDIWifiSourceAppDelegate.m; sourceTree = "<group>"; };
+		011CBC1D141B97DA00C34007 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		011CBC1F141B97DA00C34007 /* CH11_MIDIWifiSourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CH11_MIDIWifiSourceViewController.h; sourceTree = "<group>"; };
+		011CBC20141B97DA00C34007 /* CH11_MIDIWifiSourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CH11_MIDIWifiSourceViewController.m; sourceTree = "<group>"; };
+		011CBC23141B97DA00C34007 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CH11_MIDIWifiSourceViewController.xib; sourceTree = "<group>"; };
+		012F5216141BA01800723F2D /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		012F521D141BA0A400723F2D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		012F521E141BA0A400723F2D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		011CBC03141B97DA00C34007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012F5217141BA01800723F2D /* CoreMIDI.framework in Frameworks */,
+				011CBC0B141B97DA00C34007 /* UIKit.framework in Frameworks */,
+				011CBC0D141B97DA00C34007 /* Foundation.framework in Frameworks */,
+				011CBC0F141B97DA00C34007 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011CBBFB141B97DA00C34007 = {
+			isa = PBXGroup;
+			children = (
+				012F521D141BA0A400723F2D /* Icon@2x.png */,
+				012F521E141BA0A400723F2D /* Icon.png */,
+				011CBC10141B97DA00C34007 /* CH11_MIDIWifiSource */,
+				011CBC09141B97DA00C34007 /* Frameworks */,
+				011CBC07141B97DA00C34007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		011CBC07141B97DA00C34007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				011CBC06141B97DA00C34007 /* CH11_MIDIWifiSource.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		011CBC09141B97DA00C34007 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				012F5216141BA01800723F2D /* CoreMIDI.framework */,
+				011CBC0A141B97DA00C34007 /* UIKit.framework */,
+				011CBC0C141B97DA00C34007 /* Foundation.framework */,
+				011CBC0E141B97DA00C34007 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		011CBC10141B97DA00C34007 /* CH11_MIDIWifiSource */ = {
+			isa = PBXGroup;
+			children = (
+				011CBC19141B97DA00C34007 /* CH11_MIDIWifiSourceAppDelegate.h */,
+				011CBC1A141B97DA00C34007 /* CH11_MIDIWifiSourceAppDelegate.m */,
+				011CBC1C141B97DA00C34007 /* MainWindow.xib */,
+				011CBC1F141B97DA00C34007 /* CH11_MIDIWifiSourceViewController.h */,
+				011CBC20141B97DA00C34007 /* CH11_MIDIWifiSourceViewController.m */,
+				011CBC22141B97DA00C34007 /* CH11_MIDIWifiSourceViewController.xib */,
+				011CBC11141B97DA00C34007 /* Supporting Files */,
+			);
+			path = CH11_MIDIWifiSource;
+			sourceTree = "<group>";
+		};
+		011CBC11141B97DA00C34007 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				011CBC12141B97DA00C34007 /* CH11_MIDIWifiSource-Info.plist */,
+				011CBC13141B97DA00C34007 /* InfoPlist.strings */,
+				011CBC16141B97DA00C34007 /* main.m */,
+				011CBC18141B97DA00C34007 /* CH11_MIDIWifiSource-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		011CBC05141B97DA00C34007 /* CH11_MIDIWifiSource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011CBC27141B97DA00C34007 /* Build configuration list for PBXNativeTarget "CH11_MIDIWifiSource" */;
+			buildPhases = (
+				011CBC02141B97DA00C34007 /* Sources */,
+				011CBC03141B97DA00C34007 /* Frameworks */,
+				011CBC04141B97DA00C34007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CH11_MIDIWifiSource;
+			productName = CH11_MIDIWifiSource;
+			productReference = 011CBC06141B97DA00C34007 /* CH11_MIDIWifiSource.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		011CBBFD141B97DA00C34007 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Subsequently and Furthermore, Inc.";
+			};
+			buildConfigurationList = 011CBC00141B97DA00C34007 /* Build configuration list for PBXProject "CH11_MIDIWifiSource" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 011CBBFB141B97DA00C34007;
+			productRefGroup = 011CBC07141B97DA00C34007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				011CBC05141B97DA00C34007 /* CH11_MIDIWifiSource */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		011CBC04141B97DA00C34007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011CBC15141B97DA00C34007 /* InfoPlist.strings in Resources */,
+				011CBC1E141B97DA00C34007 /* MainWindow.xib in Resources */,
+				011CBC24141B97DA00C34007 /* CH11_MIDIWifiSourceViewController.xib in Resources */,
+				012F521F141BA0A400723F2D /* Icon@2x.png in Resources */,
+				012F5220141BA0A400723F2D /* Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		011CBC02141B97DA00C34007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011CBC17141B97DA00C34007 /* main.m in Sources */,
+				011CBC1B141B97DA00C34007 /* CH11_MIDIWifiSourceAppDelegate.m in Sources */,
+				011CBC21141B97DA00C34007 /* CH11_MIDIWifiSourceViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		011CBC13141B97DA00C34007 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011CBC14141B97DA00C34007 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		011CBC1C141B97DA00C34007 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011CBC1D141B97DA00C34007 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		011CBC22141B97DA00C34007 /* CH11_MIDIWifiSourceViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011CBC23141B97DA00C34007 /* en */,
+			);
+			name = CH11_MIDIWifiSourceViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		011CBC25141B97DA00C34007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		011CBC26141B97DA00C34007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		011CBC28141B97DA00C34007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CH11_MIDIWifiSource/CH11_MIDIWifiSource-Prefix.pch";
+				INFOPLIST_FILE = "CH11_MIDIWifiSource/CH11_MIDIWifiSource-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		011CBC29141B97DA00C34007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CH11_MIDIWifiSource/CH11_MIDIWifiSource-Prefix.pch";
+				INFOPLIST_FILE = "CH11_MIDIWifiSource/CH11_MIDIWifiSource-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		011CBC00141B97DA00C34007 /* Build configuration list for PBXProject "CH11_MIDIWifiSource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011CBC25141B97DA00C34007 /* Debug */,
+				011CBC26141B97DA00C34007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		011CBC27141B97DA00C34007 /* Build configuration list for PBXNativeTarget "CH11_MIDIWifiSource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011CBC28141B97DA00C34007 /* Debug */,
+				011CBC29141B97DA00C34007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 011CBBFD141B97DA00C34007 /* Project object */;
+}

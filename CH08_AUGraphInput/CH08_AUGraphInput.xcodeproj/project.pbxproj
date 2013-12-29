@@ -1,0 +1,256 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		010AC68F14ACCBDF001F38B5 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010AC68E14ACCBDF001F38B5 /* ApplicationServices.framework */; };
+		01B17AD314A510A6000E5E07 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B17AD214A510A6000E5E07 /* CoreFoundation.framework */; };
+		01B17AD614A510A6000E5E07 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01B17AD514A510A6000E5E07 /* main.cpp */; };
+		01B17AD814A510A6000E5E07 /* CH08_AUGraphInput.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01B17AD714A510A6000E5E07 /* CH08_AUGraphInput.1 */; };
+		01B17AE014A510E1000E5E07 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B17ADE14A510E1000E5E07 /* AudioToolbox.framework */; };
+		01B17AE114A510E1000E5E07 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B17ADF14A510E1000E5E07 /* AudioUnit.framework */; };
+		01B17AED14A512E6000E5E07 /* CARingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01B17AEB14A512E6000E5E07 /* CARingBuffer.cpp */; };
+		01B17AF114A51437000E5E07 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B17AF014A51437000E5E07 /* CoreAudio.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01B17ACC14A510A6000E5E07 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				01B17AD814A510A6000E5E07 /* CH08_AUGraphInput.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		010AC68E14ACCBDF001F38B5 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/ApplicationServices.framework; sourceTree = DEVELOPER_DIR; };
+		01B17ACE14A510A6000E5E07 /* CH08_AUGraphInput */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CH08_AUGraphInput; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B17AD214A510A6000E5E07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		01B17AD514A510A6000E5E07 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		01B17AD714A510A6000E5E07 /* CH08_AUGraphInput.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CH08_AUGraphInput.1; sourceTree = "<group>"; };
+		01B17ADE14A510E1000E5E07 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		01B17ADF14A510E1000E5E07 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AudioUnit.framework; sourceTree = DEVELOPER_DIR; };
+		01B17AEB14A512E6000E5E07 /* CARingBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CARingBuffer.cpp; path = /Library/Developer/CoreAudio/PublicUtility/CARingBuffer.cpp; sourceTree = "<absolute>"; };
+		01B17AEC14A512E6000E5E07 /* CARingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CARingBuffer.h; path = /Developer/Extras/CoreAudio/PublicUtility/CARingBuffer.h; sourceTree = "<absolute>"; };
+		01B17AF014A51437000E5E07 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01B17ACB14A510A6000E5E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010AC68F14ACCBDF001F38B5 /* ApplicationServices.framework in Frameworks */,
+				01B17AF114A51437000E5E07 /* CoreAudio.framework in Frameworks */,
+				01B17AE014A510E1000E5E07 /* AudioToolbox.framework in Frameworks */,
+				01B17AE114A510E1000E5E07 /* AudioUnit.framework in Frameworks */,
+				01B17AD314A510A6000E5E07 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B17AC314A510A6000E5E07 = {
+			isa = PBXGroup;
+			children = (
+				010AC68E14ACCBDF001F38B5 /* ApplicationServices.framework */,
+				01B17AD414A510A6000E5E07 /* CH08_AUGraphInput */,
+				01B17AE214A510FE000E5E07 /* CA Public Utility */,
+				01B17AD114A510A6000E5E07 /* Frameworks */,
+				01B17ACF14A510A6000E5E07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01B17ACF14A510A6000E5E07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01B17ACE14A510A6000E5E07 /* CH08_AUGraphInput */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01B17AD114A510A6000E5E07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01B17AF014A51437000E5E07 /* CoreAudio.framework */,
+				01B17ADE14A510E1000E5E07 /* AudioToolbox.framework */,
+				01B17ADF14A510E1000E5E07 /* AudioUnit.framework */,
+				01B17AD214A510A6000E5E07 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01B17AD414A510A6000E5E07 /* CH08_AUGraphInput */ = {
+			isa = PBXGroup;
+			children = (
+				01B17AD514A510A6000E5E07 /* main.cpp */,
+				01B17AD714A510A6000E5E07 /* CH08_AUGraphInput.1 */,
+			);
+			path = CH08_AUGraphInput;
+			sourceTree = "<group>";
+		};
+		01B17AE214A510FE000E5E07 /* CA Public Utility */ = {
+			isa = PBXGroup;
+			children = (
+				01B17AEB14A512E6000E5E07 /* CARingBuffer.cpp */,
+				01B17AEC14A512E6000E5E07 /* CARingBuffer.h */,
+			);
+			name = "CA Public Utility";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01B17ACD14A510A6000E5E07 /* CH08_AUGraphInput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B17ADB14A510A6000E5E07 /* Build configuration list for PBXNativeTarget "CH08_AUGraphInput" */;
+			buildPhases = (
+				01B17ACA14A510A6000E5E07 /* Sources */,
+				01B17ACB14A510A6000E5E07 /* Frameworks */,
+				01B17ACC14A510A6000E5E07 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CH08_AUGraphInput;
+			productName = CH08_AUGraphInput;
+			productReference = 01B17ACE14A510A6000E5E07 /* CH08_AUGraphInput */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01B17AC514A510A6000E5E07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Subsequently and Furthermore, Inc.";
+			};
+			buildConfigurationList = 01B17AC814A510A6000E5E07 /* Build configuration list for PBXProject "CH08_AUGraphInput" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 01B17AC314A510A6000E5E07;
+			productRefGroup = 01B17ACF14A510A6000E5E07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01B17ACD14A510A6000E5E07 /* CH08_AUGraphInput */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01B17ACA14A510A6000E5E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B17AD614A510A6000E5E07 /* main.cpp in Sources */,
+				01B17AED14A512E6000E5E07 /* CARingBuffer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01B17AD914A510A6000E5E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		01B17ADA14A510A6000E5E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		01B17ADC14A510A6000E5E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		01B17ADD14A510A6000E5E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01B17AC814A510A6000E5E07 /* Build configuration list for PBXProject "CH08_AUGraphInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B17AD914A510A6000E5E07 /* Debug */,
+				01B17ADA14A510A6000E5E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01B17ADB14A510A6000E5E07 /* Build configuration list for PBXNativeTarget "CH08_AUGraphInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B17ADC14A510A6000E5E07 /* Debug */,
+				01B17ADD14A510A6000E5E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01B17AC514A510A6000E5E07 /* Project object */;
+}

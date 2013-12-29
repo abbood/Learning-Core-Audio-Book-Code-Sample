@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		017829E51361EE3B00CA6C4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017829E41361EE3B00CA6C4C /* UIKit.framework */; };
+		017829E71361EE3B00CA6C4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017829E61361EE3B00CA6C4C /* Foundation.framework */; };
+		017829E91361EE3B00CA6C4C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017829E81361EE3B00CA6C4C /* CoreGraphics.framework */; };
+		017829EF1361EE3B00CA6C4C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 017829ED1361EE3B00CA6C4C /* InfoPlist.strings */; };
+		017829F21361EE3B00CA6C4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 017829F11361EE3B00CA6C4C /* main.m */; };
+		017829F51361EE3B00CA6C4C /* CH10_iOSBackgroundingToneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 017829F41361EE3B00CA6C4C /* CH10_iOSBackgroundingToneAppDelegate.m */; };
+		017829F81361EE3B00CA6C4C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 017829F61361EE3B00CA6C4C /* MainWindow.xib */; };
+		017829FF1361EE8500CA6C4C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017829FE1361EE8500CA6C4C /* AudioToolbox.framework */; };
+		01A84DDF136A10890025ED93 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A84DDD136A10890025ED93 /* Icon.png */; };
+		01A84DE0136A10890025ED93 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A84DDE136A10890025ED93 /* Icon@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		017829E01361EE3B00CA6C4C /* BG Tone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BG Tone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		017829E41361EE3B00CA6C4C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		017829E61361EE3B00CA6C4C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		017829E81361EE3B00CA6C4C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		017829EC1361EE3B00CA6C4C /* CH10_iOSBackgroundingTone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CH10_iOSBackgroundingTone-Info.plist"; sourceTree = "<group>"; };
+		017829EE1361EE3B00CA6C4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		017829F01361EE3B00CA6C4C /* CH10_iOSBackgroundingTone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CH10_iOSBackgroundingTone-Prefix.pch"; sourceTree = "<group>"; };
+		017829F11361EE3B00CA6C4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		017829F31361EE3B00CA6C4C /* CH10_iOSBackgroundingToneAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CH10_iOSBackgroundingToneAppDelegate.h; sourceTree = "<group>"; };
+		017829F41361EE3B00CA6C4C /* CH10_iOSBackgroundingToneAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CH10_iOSBackgroundingToneAppDelegate.m; sourceTree = "<group>"; };
+		017829F71361EE3B00CA6C4C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		017829FE1361EE8500CA6C4C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		01A84DDD136A10890025ED93 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		01A84DDE136A10890025ED93 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		017829DD1361EE3B00CA6C4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017829FF1361EE8500CA6C4C /* AudioToolbox.framework in Frameworks */,
+				017829E51361EE3B00CA6C4C /* UIKit.framework in Frameworks */,
+				017829E71361EE3B00CA6C4C /* Foundation.framework in Frameworks */,
+				017829E91361EE3B00CA6C4C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		017829D51361EE3B00CA6C4C = {
+			isa = PBXGroup;
+			children = (
+				017829EA1361EE3B00CA6C4C /* CH10_iOSBackgroundingTone */,
+				017829E31361EE3B00CA6C4C /* Frameworks */,
+				017829E11361EE3B00CA6C4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		017829E11361EE3B00CA6C4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				017829E01361EE3B00CA6C4C /* BG Tone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		017829E31361EE3B00CA6C4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				017829FE1361EE8500CA6C4C /* AudioToolbox.framework */,
+				017829E41361EE3B00CA6C4C /* UIKit.framework */,
+				017829E61361EE3B00CA6C4C /* Foundation.framework */,
+				017829E81361EE3B00CA6C4C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		017829EA1361EE3B00CA6C4C /* CH10_iOSBackgroundingTone */ = {
+			isa = PBXGroup;
+			children = (
+				017829F31361EE3B00CA6C4C /* CH10_iOSBackgroundingToneAppDelegate.h */,
+				017829F41361EE3B00CA6C4C /* CH10_iOSBackgroundingToneAppDelegate.m */,
+				017829F61361EE3B00CA6C4C /* MainWindow.xib */,
+				017829EB1361EE3B00CA6C4C /* Supporting Files */,
+			);
+			path = CH10_iOSBackgroundingTone;
+			sourceTree = "<group>";
+		};
+		017829EB1361EE3B00CA6C4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01A84DDD136A10890025ED93 /* Icon.png */,
+				01A84DDE136A10890025ED93 /* Icon@2x.png */,
+				017829EC1361EE3B00CA6C4C /* CH10_iOSBackgroundingTone-Info.plist */,
+				017829ED1361EE3B00CA6C4C /* InfoPlist.strings */,
+				017829F01361EE3B00CA6C4C /* CH10_iOSBackgroundingTone-Prefix.pch */,
+				017829F11361EE3B00CA6C4C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		017829DF1361EE3B00CA6C4C /* CH10_iOSBackgroundingTone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 017829FB1361EE3B00CA6C4C /* Build configuration list for PBXNativeTarget "CH10_iOSBackgroundingTone" */;
+			buildPhases = (
+				017829DC1361EE3B00CA6C4C /* Sources */,
+				017829DD1361EE3B00CA6C4C /* Frameworks */,
+				017829DE1361EE3B00CA6C4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CH10_iOSBackgroundingTone;
+			productName = CH10_iOSBackgroundingTone;
+			productReference = 017829E01361EE3B00CA6C4C /* BG Tone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		017829D71361EE3B00CA6C4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Subsequently and Furthermore, Inc.";
+			};
+			buildConfigurationList = 017829DA1361EE3B00CA6C4C /* Build configuration list for PBXProject "CH10_iOSBackgroundingTone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 017829D51361EE3B00CA6C4C;
+			productRefGroup = 017829E11361EE3B00CA6C4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				017829DF1361EE3B00CA6C4C /* CH10_iOSBackgroundingTone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		017829DE1361EE3B00CA6C4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017829EF1361EE3B00CA6C4C /* InfoPlist.strings in Resources */,
+				017829F81361EE3B00CA6C4C /* MainWindow.xib in Resources */,
+				01A84DDF136A10890025ED93 /* Icon.png in Resources */,
+				01A84DE0136A10890025ED93 /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		017829DC1361EE3B00CA6C4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017829F21361EE3B00CA6C4C /* main.m in Sources */,
+				017829F51361EE3B00CA6C4C /* CH10_iOSBackgroundingToneAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		017829ED1361EE3B00CA6C4C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				017829EE1361EE3B00CA6C4C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		017829F61361EE3B00CA6C4C /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				017829F71361EE3B00CA6C4C /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		017829F91361EE3B00CA6C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		017829FA1361EE3B00CA6C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		017829FC1361EE3B00CA6C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CH10_iOSBackgroundingTone/CH10_iOSBackgroundingTone-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "CH10_iOSBackgroundingTone/CH10_iOSBackgroundingTone-Info.plist";
+				PRODUCT_NAME = "BG Tone";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		017829FD1361EE3B00CA6C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CH10_iOSBackgroundingTone/CH10_iOSBackgroundingTone-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "CH10_iOSBackgroundingTone/CH10_iOSBackgroundingTone-Info.plist";
+				PRODUCT_NAME = "BG Tone";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		017829DA1361EE3B00CA6C4C /* Build configuration list for PBXProject "CH10_iOSBackgroundingTone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017829F91361EE3B00CA6C4C /* Debug */,
+				017829FA1361EE3B00CA6C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		017829FB1361EE3B00CA6C4C /* Build configuration list for PBXNativeTarget "CH10_iOSBackgroundingTone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017829FC1361EE3B00CA6C4C /* Debug */,
+				017829FD1361EE3B00CA6C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 017829D71361EE3B00CA6C4C /* Project object */;
+}
