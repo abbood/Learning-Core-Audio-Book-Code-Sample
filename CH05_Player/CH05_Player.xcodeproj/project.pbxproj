@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		011C4A7314A5038900A35D5F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011C4A7214A5038900A35D5F /* CoreFoundation.framework */; };
 		011C4A7614A5038900A35D5F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 011C4A7514A5038900A35D5F /* main.c */; };
 		011C4A7814A5038900A35D5F /* CH05_Player.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 011C4A7714A5038900A35D5F /* CH05_Player.1 */; };
-		011C4A7F14A5039F00A35D5F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011C4A7E14A5039F00A35D5F /* AudioToolbox.framework */; };
+		0AF5B06B1B7FDC2600C91335 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF5B06A1B7FDC2600C91335 /* AudioToolbox.framework */; };
+		0AF5B06D1B7FDC3700C91335 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF5B06C1B7FDC3700C91335 /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,10 +28,10 @@
 
 /* Begin PBXFileReference section */
 		011C4A6E14A5038900A35D5F /* CH05_Player */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CH05_Player; sourceTree = BUILT_PRODUCTS_DIR; };
-		011C4A7214A5038900A35D5F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		011C4A7514A5038900A35D5F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		011C4A7714A5038900A35D5F /* CH05_Player.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CH05_Player.1; sourceTree = "<group>"; };
-		011C4A7E14A5039F00A35D5F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		0AF5B06A1B7FDC2600C91335 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0AF5B06C1B7FDC3700C91335 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,8 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011C4A7F14A5039F00A35D5F /* AudioToolbox.framework in Frameworks */,
-				011C4A7314A5038900A35D5F /* CoreFoundation.framework in Frameworks */,
+				0AF5B06D1B7FDC3700C91335 /* CoreFoundation.framework in Frameworks */,
+				0AF5B06B1B7FDC2600C91335 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,8 +67,8 @@
 		011C4A7114A5038900A35D5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				011C4A7E14A5039F00A35D5F /* AudioToolbox.framework */,
-				011C4A7214A5038900A35D5F /* CoreFoundation.framework */,
+				0AF5B06C1B7FDC3700C91335 /* CoreFoundation.framework */,
+				0AF5B06A1B7FDC2600C91335 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -181,7 +181,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -190,7 +190,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -199,7 +199,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
