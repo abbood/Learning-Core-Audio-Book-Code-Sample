@@ -6,7 +6,7 @@
 #endif
 
 
-#define kInputFileLocation	CFSTR("/Insert/Path/To/Audio/File.xxx")
+#define kInputFileLocation	CFSTR("/Users/alexanderbollbach/Desktop/qt.m4a")
 // #define kInputFileLocation	CFSTR("/Users/kevin/Desktop/tmp_storage/audio_tests/cdsd_scratch.aiff")
 // #define kInputFileLocation	CFSTR("/Volumes/Sephiroth/Tunes//菅野よう子/ESCAFLOWNE - ORIGINAL MOVIE SOUNDTRACK/We're flying.m4a")
 
@@ -24,7 +24,7 @@ typedef struct MyAudioConverterSettings
 	AudioStreamPacketDescription *inputFilePacketDescriptions; // array of packet descriptions for read buffer
 	
 	// KEVIN: sourceBuffer is never used outside of the callback. why couldn't it be a local there?
-	void *sourceBuffer;
+	
 	
 } MyAudioConverterSettings;
 
@@ -68,7 +68,9 @@ OSStatus MyAudioConverterCallback(AudioConverterRef inAudioConverter,
 								  AudioStreamPacketDescription **outDataPacketDescription,
 								  void *inUserData)
 {
-	MyAudioConverterSettings *audioConverterSettings = (MyAudioConverterSettings *)inUserData;
+void *sourceBuffer = 0;
+   
+   MyAudioConverterSettings *audioConverterSettings = (MyAudioConverterSettings *)inUserData;
 	
 	// initialize in case of failure
     ioData->mBuffers[0].mData = NULL;			
@@ -81,13 +83,13 @@ OSStatus MyAudioConverterCallback(AudioConverterRef inAudioConverter,
 	if(*ioDataPacketCount == 0)
         return noErr;
     
-    if (audioConverterSettings->sourceBuffer != NULL)
+    if (sourceBuffer != NULL)
     {
-        free(audioConverterSettings->sourceBuffer);
-        audioConverterSettings->sourceBuffer = NULL;
+        free(sourceBuffer);
+       sourceBuffer = NULL;
     }
     
-    audioConverterSettings->sourceBuffer = (void *)calloc(1, *ioDataPacketCount * audioConverterSettings->inputFilePacketMaxSize);        
+    sourceBuffer = (void *)calloc(1, *ioDataPacketCount * audioConverterSettings->inputFilePacketMaxSize);
 	
     UInt32 outByteCount = 0;
 	OSStatus result = AudioFileReadPackets(audioConverterSettings->inputFile, 
@@ -96,7 +98,7 @@ OSStatus MyAudioConverterCallback(AudioConverterRef inAudioConverter,
 										   audioConverterSettings->inputFilePacketDescriptions, 
 										   audioConverterSettings->inputFilePacketIndex,
 										   ioDataPacketCount, 
-										   audioConverterSettings->sourceBuffer);
+										   sourceBuffer);
     
 	// it's not an error if we just read the remainder of the file
 #ifdef MAC_OS_X_VERSION_10_7
@@ -120,7 +122,7 @@ OSStatus MyAudioConverterCallback(AudioConverterRef inAudioConverter,
 	 }
 	 */
 	// chris' hacky asssume-one-buffer equivalent
-	ioData->mBuffers[0].mData = audioConverterSettings->sourceBuffer;
+	ioData->mBuffers[0].mData = sourceBuffer;
 	ioData->mBuffers[0].mDataByteSize = outByteCount;
 	
     if (outDataPacketDescription)
